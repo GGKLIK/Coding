@@ -1,0 +1,172 @@
+*,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav {
+    background-color:deepskyblue;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem; /*1 rem = 16px*/
+}
+
+nav .hidden{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 2rem;
+}
+nav .ul-logo{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+}
+nav ul p{
+    color: blue;
+    font-weight: 700;
+    font-family:'Segoe UI', sans-serif;
+}
+nav .my-avatar img{
+    width: 50px;
+    height: 45px;
+    display: flex;
+    margin-right: 1px;
+}
+nav .my-description {
+    margin-left: 1px;
+    justify-content: space-between;
+}
+img{
+    border: 2px solid deepskyblue; /* Menambahkan border */  
+    border-radius: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: "Segoe UI", sans-serif;
+    color: #191919;
+    font-weight: 600;
+    padding: 8px 0; /*atas bawah 8px, samping 0px*/
+    transition: all;
+    transition-duration: 300ms;
+    border-bottom: 1px solid rgba(255, 68, 0, 0);
+}
+
+nav ul li a:hover {
+    color: orangered;
+    border-bottom: 1.5px solid orangered;
+}
+
+.menu-icon {
+    background-color: tomato;
+    font-size: 28px;
+    display: none;
+}
+@media only screen and (max-width: 768px) {/*digunakan untuk responsif di berbagai device*/
+nav {
+    flex-wrap: wrap;
+    /*Item fleksibel akan membungkus ke baris atau kolom 
+    berikutnya jika mereka tidak muat dalam satu baris atau kolom.*/
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav ul {
+    flex-direction: column;
+    /*Item fleksibel disusun dalam kolom vertikal 
+    dari atas ke bawah (dari start ke end)*/
+    width: 100%;
+}
+
+nav ul li:last-of-type {
+    padding-bottom: 8px;    
+}
+
+nav ul.hidden {
+    display: none;
+}
+
+.menu-icon {
+    display: flex;
+    align-items: center;
+}
+}
+.dropdown-content {  
+    display: none; /* Secara default, tidak ditampilkan */  
+    position: absolute; /* Memungkinkan dropdown muncul di atas elemen lain */  
+    background-color: #f9f9f9;  
+    min-width: 160px; /* Lebar minimum */  
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+    z-index: 1; /* Lebih rendah, akan berada di bawah box2 */ 
+}  
+
+li:hover .dropdown-content {  
+    display: block;
+}  
+
+.dropdown-content a {  
+    color: black; 
+    padding: 12px 16px; 
+    text-decoration: none; 
+    display: block;   
+}  
+.dropdown-content a:hover {  
+    background-color: #ddd;
+} 
+.schedule-container {  
+    margin: 20px;
+    padding: 10px; 
+    background-color: #f9f9f9; 
+    border-radius: 5px; /* Bulatan sudut */
+    display: flex; /* Mengaktifkan flexbox */
+    justify-content: space-between;
+}  
+
+h2 {  
+    padding-top: 10px;
+    text-align: center; 
+    color: #333; 
+}  
+
+h3 {  
+    text-align: center;
+    margin-top: 20px;  
+    color: #007bff; 
+}  
+
+table {  
+    width: 100%;  
+    border-collapse: collapse; /* Menghilangkan jarak antar border sel */  
+    margin-bottom: 20px; /* Jarak antar tabel */  
+}  
+
+th, td {  
+    border: 1px solid #ddd;  
+    padding: 8px; /* Padding di dalam sel */  
+    text-align: left; /* Teks rata kiri di dalam sel */  
+}  
+
+th {  
+    background-color: #007bff;   
+    color: white;  
+}  
+
+tr:nth-child(even) {  
+    background-color: #f2f2f2; /* Warna latar belakang untuk baris genap */  
+}  
+
+tr:hover {  
+    background-color: #ddd; /* Warna latar belakang saat hover mouse */  
+}
+.box {  
+    width: 45%; /* Lebar setiap box */  
+    padding: 20px;   
+    text-align: center;
+    margin: 10px; /* Jarak antar box */  
+}

@@ -1,0 +1,148 @@
+*,  
+html {  
+    padding: 0;  
+    margin: 0;  
+    box-sizing: border-box;  
+}  
+
+body {  
+    font-family: Arial, sans-serif;  
+    background-color: #f4f4f4;  
+    margin: 0;  
+}  
+
+nav {  
+    background-color: deepskyblue;  
+    display: flex;  
+    justify-content: space-between;  
+    padding: 10px 2rem; /* bisa disesuaikan */  
+    width: 100%; /* Lebar penuh */  
+    position: fixed; /* Agar tetap di atas saat digulir */  
+    top: 0; /* Menempel di bagian atas */  
+    left: 0; /* Menempel di sisi kiri */  
+    z-index: 1000; /* Pastikan navbar di atas konten lainnya */  
+}  
+
+.ul-logo {  
+    display: flex;  
+    align-items: center;  
+    list-style: none;  
+    padding: 0;  
+    margin: 0; /* Pastikan tidak ada margin */  
+}  
+
+.my-avatar img {  
+    width: 50px;  
+    height: 45px;  
+    margin-right: 10px; /* Menambah jarak gambar */  
+}  
+
+.my-description p {  
+    color: blue;  
+    font-weight: 700;  
+}  
+
+#menu-list {  
+    display: flex;  
+    align-items: center;  
+    list-style: none;  
+}  
+
+#menu-list li {  
+    padding: 10px;  
+}  
+
+#menu-list li a {  
+    text-decoration: none;  
+    color: #191919;  
+    padding: 10px 15px;  
+    transition: all 300ms;  
+    border-bottom: 1px solid transparent;  
+}  
+
+#menu-list li a:hover {  
+    color: orangered;  
+    border-bottom: 2px solid orangered;  
+}  
+
+/* Dropdown CSS */  
+.dropdown-content {  
+    display: none;  
+    position: absolute;  
+    background-color: #f9f9f9;  
+    min-width: 160px;  
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);  
+    z-index: 1;  
+}  
+
+li:hover .dropdown-content {  
+    display: block;  
+}  
+
+.dropdown-content a {  
+    color: black;  
+    padding: 12px 16px;  
+    text-decoration: none;  
+    display: block;  
+}  
+
+.dropdown-content a:hover {  
+    background-color: #ddd;  
+}  
+
+/* Jika Anda ingin ada margin saat scrolling, tambahkan padding-top */  
+.container {  
+    padding-top: 80px; /* Sesuaikan dengan tinggi navbar untuk memberi jarak konten dari navbar */  
+    max-width: 800px;  
+    margin: 30px auto;  
+    background: white;  
+    padding: 50px;  
+    border-radius: 5px;  
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+h1 {  
+    text-align: center;  
+    color: #333;  
+    margin-bottom: 5px;
+}  
+
+.subject {  
+    margin-bottom: 20px;  
+}  
+
+.subject h2 {  
+    background-color: #007bff;  
+    color: white;  
+    padding: 10px;  
+    border-radius: 5px;  
+}  
+
+ul {  
+    list-style: none;  
+    padding: 0;  
+}  
+
+li {  
+    padding: 10px;  
+    border-bottom: 1px solid #ccc;  
+    transition: background-color 0;
+}
+
+li:last-child {  
+    border-bottom: none;  
+}
+button{
+    margin-left: 619px;
+    padding: 3px;
+    background-color:#1976D2;
+    border: 1px solid black; /* Menambahkan border */  
+    border-radius: 1px;
+}
+button:hover{
+    background-color:lightblue;
+}
+button a{
+    text-decoration: none;
+    color:white;
+}

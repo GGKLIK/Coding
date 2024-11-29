@@ -1,0 +1,334 @@
+*,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #9a9a9a;
+}
+
+nav {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+nav .hidden{
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 2rem;
+}
+nav .ul-logo{
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+}
+nav ul p{
+  color: blue;
+  font-weight: 700;
+  font-family:'Segoe UI', sans-serif;
+}
+nav .my-avatar img{
+  width: 50px;
+  height: 45px;
+  display: flex;
+  margin-right: 1px;
+}
+nav .my-description {
+  margin-left: 1px;
+  justify-content: space-between;
+}
+img{
+  border: 2px solid white; /* Menambahkan border */  
+  border-radius: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: "Segoe UI", sans-serif;
+  color: #191919;
+  font-weight: 600;
+  padding: 8px 0;
+  transition: all;
+  transition-duration: 300ms;
+  border-bottom: 1px solid rgba(255, 68, 0, 0);
+}
+
+nav ul li a:hover {
+  color: orangered;
+  border-bottom: 1px solid orangered;
+}
+
+.menu-icon {
+  background-color: tomato;
+  font-size: 28px;
+  display: none;
+}
+
+main {
+  padding-top: 7rem;
+}
+.dropdown-content {  
+  display: none; /* Secara default, tidak ditampilkan */  
+  position: absolute; /* Memungkinkan dropdown muncul di atas elemen lain */  
+  background-color: #f9f9f9;  
+  min-width: 160px; /* Lebar minimum */  
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+  z-index: 1; 
+}  
+
+li:hover .dropdown-content {  
+  display: block; 
+}  
+
+.dropdown-content a {  
+  color: black; 
+  padding: 12px 16px; 
+  text-decoration: none; 
+  display: block;   
+}  
+.dropdown-content a:hover {  
+  background-color: #ddd;
+}  
+
+@media only screen and (max-width: 768px) {
+nav {
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav ul {
+    flex-direction: column;
+    width: 100%;
+}
+
+nav ul li:last-of-type {
+    padding-bottom: 8px;    
+}
+
+nav ul.hidden {
+    display: none;
+}
+
+.menu-icon {
+    display: flex;
+    align-items: center;
+}
+}
+table {
+    border: dotted #000;
+    width: 100%;
+}
+  
+th, td {
+    border: 2px solid black;
+    padding: 8px;
+    text-align: left;
+}
+  
+th {
+    background-color: #f0f0f0;
+}
+main {
+  margin-bottom: 200px;
+}
+footer{
+  width: 100%;
+  bottom: 0;
+  background: linear-gradient(to right, #00093c, #2d0b00);
+  color: #fff;
+  padding: 100px 0 30px;
+  border-top-left-radius: 125px;
+  font-size: 13px;
+  line-height: 20px;
+}
+.row{
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.col{
+  flex-basis: 25%;
+  padding: 10px;
+}
+.col:nth-child(2){
+  flex-basis: 15%;
+
+}
+.logo{
+  width: 80px;
+  margin-bottom: 30px;
+}
+.col h3{
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+}
+.email-id{
+  width: fit-content;
+  border-bottom: 1px solid #ccc;
+  margin: 20px 0;
+}
+form button ion-icon[name="arrow-forward-outline"] {
+  color: #fff;
+  font-size: 15px;
+}
+ul li{
+  list-style: none;
+  margin-bottom: 12px;
+}
+ul li a{
+  text-decoration: none;
+  color: #fff;
+}
+form{
+  padding-bottom: 15px;
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 50px;
+}
+form .far{
+  font-size: 18px;
+  margin-right: 10px;
+}
+form input{
+  width: 100%;
+  background: transparent;
+  color: #ccc;
+  border: 0%;
+  outline: none;
+}
+form button{
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+form button .fast{
+  font-size: 16px;
+  color: #ccc;
+}
+.medsos ion-icon{
+  width: 30px;
+  height: 30px;
+  border-radius: 30%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  color: black;
+  background: #fff;
+  margin-right: 15px;
+  cursor: pointer;
+}
+hr{
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  margin: 20px auto;
+}
+.Copyright{
+  text-align: center;
+}
+.underline{
+  width: 100%;
+  height: 5px;
+  background: #767676;
+  border-radius: 3px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  overflow: hidden;
+}
+.underline span{
+  width: 15px;
+  height: 100%;
+  background: #fff;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  animation: moving 2s linear infinite;
+}
+@keyframes moving{
+  0%{
+      left: -20px;
+  }
+  100%{
+      left: 100%;
+  }
+}
+
+body {
+  background-color: #250381;
+  color: #ffffff;
+  font-family:Arial;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.2em;
+  color: #bbb;
+}
+
+section {
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  border-bottom: 2px solid #3f51b5;
+  padding-bottom: 10px;
+  color: #3f51b5;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
+a {
+  color: #3f51b5;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  color: #bbb;
+}
